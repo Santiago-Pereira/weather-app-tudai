@@ -4,35 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo tiempo</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-        <nav>
-            <img src="" class="logo" alt="Imagen del logo no encontrada"></img>
-            <ul>
-                <li>Tiempo</li>
-                <li>Noticias</li>
-                <li>Contacto</li>
-                <li>Sobre nosotros</li>
-            </ul>
-        </nav>
-    </header>
-     <main>
-        <section class="weather_hero">
-            <img src="" alt="Imagen de fondo no encontrada" class="weather_hero_background_img">
-            <input type="text" placeholder="Ingrese el nombre de la ciudad..." class="weather_hero_search_bar">
-            <img src="" alt="Imagen de la lupa de buscar no encontrada" class="weather_hero_search_bar_btn">
-            <h1 class="weather_hero_temperature"></h1>
-            <h2 class="weather_hero_city"></h2>
-            <img src="" alt="Imagen de humedad no encontrada" class="weather_hero_humidity_img">
-            <p class="weather_hero_humidity_percentage"></p>
-            <p class="weather_hero_humidity">Humedad</p>
-            <img src="" alt="Imagen de viento no encontrada" class="weather_hero_wind_img">
-            <p class="weather_hero_wind_speed"></p>
-            <p class="weather_hero_wind">Viento</p>
-        </section>
-     </main>
-    <aside></aside>
-    <footer></footer>
+    <section class="weather_hero">
+        <header>
+            <nav>
+                <img src="./Assets/clear.png" class="logo" alt="Imagen del logo no encontrada" width="60" height="60"></img>
+                <p>Todo Tiempo</p>
+                <ul>
+                    <li>Tiempo</li>
+                    <li>Noticias</li>
+                    <li>Contacto</li>
+                    <li>Sobre nosotros</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--  <img src="" alt="Imagen de fondo no encontrada" class="weather_hero_background_img"> -->
+                <div class="weather_hero_search_bar">
+                    <input type="text" placeholder="Ingrese el nombre de la ciudad..." class="weather_hero_search_bar_input">
+                    <img src="./Assets/search.png" alt="Imagen de la lupa de buscar no encontrada" class="weather_hero_search_bar_btn" width="20" height="20">
+                 </div>
+
+                 <div class="weather_hero_img">
+                     <img src="./Assets/clear.png" alt="Imagen del tiempo no encontrada" class="weather_hero_icon">
+                </div>
+
+                <div class="weather_hero_text">
+                   <h1 class="weather_hero_temperature">10</h1>
+                   <h2 class="weather_hero_city">Tandil</h2>
+                </div>
+
+                    <div class="weather_hero_data">
+                        <div class="weather_hero_humidity">
+                            <img src="./Assets/humidity.png" alt="Imagen de humedad no encontrada" class="weather_hero_humidity_img">
+                            <div class="weather_hero_data_text_humidity">
+                                <p class="weather_hero_humidity_percentage">Humedad: 80%</p>
+                            </div>
+                        </div>
+
+                        <div class="weather_hero_wind">
+                            <img src="./Assets/wind.png" alt="Imagen de viento no encontrada" class="weather_hero_wind_img">
+                          <div class="weather_hero_data_text_wind">
+                               <p class="weather_hero_wind_speed">Viento: 35km/h</p>
+                          </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <aside></aside>
+        <footer></footer>
   </body>
 </html>
