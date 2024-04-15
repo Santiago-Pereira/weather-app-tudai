@@ -19,7 +19,7 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-ul {
+nav ul {
   display: flex;
   margin-left: auto;
 }
@@ -103,4 +103,95 @@ li {
 .weather_hero_wind {
   display: flex;
   color: white;
+}
+
+/* seccion de cards para las noticias */
+
+.news {
+  max-width: 100%;
+}
+
+.news_main h2 {
+  border-bottom: 4px solid black;
+}
+.news_main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.news_main img {
+  max-width: 100%;
+}
+
+.news_more_news {
+  padding: 1rem;
+}
+
+.news_more_news h2 {
+  border-bottom: 4px solid black;
+  width: fit-content;
+}
+.news_more_news_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 0;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* footer estilos */
+footer {
+  background-color: rgb(68, 68, 68);
+  padding-top: 2rem;
+}
+
+.footer_text p {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 0 40px;
+  margin: 0;
+  text-decoration: underline 3px;
+}
+
+/* .footer_line {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid white;
+} */
+
+.footer_social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_social ul {
+  display: flex;
+}
+
+/* media queries */
+@media screen and (min-width: 600px) {
+  .news_more_news {
+    padding: 10rem;
+  }
 }
